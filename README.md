@@ -1,6 +1,8 @@
 # Codeforces Clone - Competitive Programming Platform
 
 A full-stack competitive programming platform inspired by Codeforces and LeetCode, built with modern web technologies and microservices architecture.
+<img width="1556" height="586" alt="image" src="https://github.com/user-attachments/assets/2be418f0-e750-4963-aab1-6668a6353691" />
+
 
 ## 🚀 Features
 
