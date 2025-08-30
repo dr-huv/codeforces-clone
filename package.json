@@ -1,0 +1,53 @@
+{
+  "name": "codeforces-clone",
+  "version": "1.0.0",
+  "description": "A competitive programming platform similar to Codeforces/LeetCode with React frontend, Node.js backend, and microservices architecture",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:dev": "cd frontend && npm run dev",
+    "build": "npm run frontend:build && npm run backend:build",
+    "frontend:build": "cd frontend && npm run build",
+    "backend:build": "cd backend && npm run build",
+    "start": "npm run backend:start",
+    "backend:start": "cd backend && npm start",
+    "test": "npm run backend:test && npm run frontend:test",
+    "backend:test": "cd backend && npm test",
+    "frontend:test": "cd frontend && npm test",
+    "docker:build": "docker-compose -f docker/docker-compose.yml build",
+    "docker:up": "docker-compose -f docker/docker-compose.yml up",
+    "docker:down": "docker-compose -f docker/docker-compose.yml down",
+    "k8s:deploy": "kubectl apply -f kubernetes/",
+    "k8s:delete": "kubectl delete -f kubernetes/",
+    "seed": "node scripts/seed-data.js",
+    "setup": "bash scripts/setup.sh"
+  },
+  "keywords": [
+    "competitive-programming",
+    "online-judge",
+    "codeforces",
+    "leetcode",
+    "react",
+    "nodejs",
+    "express",
+    "postgresql",
+    "mongodb",
+    "rabbitmq",
+    "docker",
+    "kubernetes"
+  ],
+  "author": "dr-huv",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dr-huv/codeforces-clone.git"
+  }
+}

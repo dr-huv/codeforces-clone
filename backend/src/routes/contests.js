@@ -1,0 +1,1 @@
+// contests.js - Generated file

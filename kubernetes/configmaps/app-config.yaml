@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  # Database configuration
+  postgres-db: "codeforces_clone"
+  mongodb-db: "codeforces_submissions"
+
+  # Application URLs
+  frontend-url: "http://localhost:3000"
+  backend-url: "http://backend-service:5000"
+
+  # Application settings
+  node-env: "production"
+  log-level: "info"
+
+  # Judge system settings
+  judge-timeout: "10000"
+  max-memory: "128"
+  max-cpu-time: "2000"
+
+  # Rate limiting
+  rate-limit-window: "15"
+  rate-limit-max-requests: "100"

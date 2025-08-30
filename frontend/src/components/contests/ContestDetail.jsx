@@ -1,0 +1,1 @@
+// ContestDetail.jsx - Generated file

@@ -1,0 +1,1 @@
+// rabbitmq.js - Generated file
